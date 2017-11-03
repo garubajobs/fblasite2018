@@ -1,5 +1,5 @@
 $(function () {
-  $('a.tab').on('click', function (event) {
+  $(document).on('click', 'a.tab', function (event) {
     event.preventDefault()
     $('.panel.is-active').toggleClass('is-active')
     $(this.hash).toggleClass('is-active')

@@ -1,4 +1,4 @@
-var outsideClickListener = (event) => {
+var outsideClickListener = function(event) {
   if (!$(event.target).closest('.sidebar').length){
     if ($('.sidebar').width() > 0){
       $('.sidebar .nav-link').hide()
@@ -14,7 +14,7 @@ $(function () {
     $('.obfuscator').show()
     $('.sidebar').animate({width: 240}, 200, function () {
       $('.sidebar .nav-link').show()
-      $('.obfuscator').on('click', outsideClickListener)
+      $(document).on('click', '.obfuscator', outsideClickListener)
     })
   })
 })
