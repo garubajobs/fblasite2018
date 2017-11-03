@@ -1,0 +1,20 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#homepage-hero {
+  background-image: linear-gradient(to right,rgba(63, 81, 181, 0.1), rgba(63, 81, 181, 0.4)),
+    image-url("Hero_Background.png");
+
+}
+#openings-hero {
+  background-image: image-url("JobOpeningsHero.png");
+}
+#resume-hero {
+  background-image: image-url("ResumeHero.png");
+}
+#application-hero {
+  background-image: image-url("ApplicationLetterHERO.png");
+}
+#interview-hero {
+  background-image: image-url("InterviewHero.png");
+}

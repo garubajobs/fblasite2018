@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title = @title || "default title"
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .obfuscator
+    = render partial: "header"
+    = render partial: "sidebar"
+    .content
+
+      = yield
+      .spacer
+      = render partial: "tabs"
+      = render partial: "footer"
