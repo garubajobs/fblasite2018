@@ -2,9 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #homepage-hero {
-  background-image: linear-gradient(to right,rgba(63, 81, 181, 0.1), rgba(63, 81, 181, 0.4)),
-    image-url("Hero_Background.png");
-
+  background-image: image-url("NewHero.jpg");
 }
 #openings-hero {
   background-image: image-url("JobOpeningsHero.png");

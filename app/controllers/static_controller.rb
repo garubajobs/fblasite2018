@@ -18,4 +18,7 @@ class StaticController < ApplicationController
 
   def interview
   end
+
+  def credits
+  end
 end
