@@ -15,14 +15,14 @@
  */
 @import url('//fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import url('//fonts.googleapis.com/css?family=Righteous');
-@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 
 
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-.content {
+main {
   position: absolute;
   top: 64px;
   left: 0px;
