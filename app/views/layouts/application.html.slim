@@ -11,8 +11,8 @@ html
     = render partial: "header"
     = render partial: "sidebar"
     main
-
-      = yield
+      .content
+        = yield
       .spacer
 
       = render partial: "footer"
