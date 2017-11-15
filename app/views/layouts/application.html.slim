@@ -10,9 +10,8 @@ html
     .obfuscator
     = render partial: "header"
     = render partial: "sidebar"
-    main
-      .content
-        = yield
+    main 
+      = yield
       .spacer
 
       = render partial: "footer"

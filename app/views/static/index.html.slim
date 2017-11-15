@@ -1,8 +1,10 @@
 - @title = "Garuba"
 - @tab_num = 0
 .main-hero-image#homepage-hero
+  /.parallax-window data-parallax="scroll" data-image-src=image_url("NewHero.jpg") data-speed="0.5"
   .hero-text
     | Welcome to Garuba
     br
     .round-button#down-arrow-button: i.icon.ion-android-arrow-down
-= render partial: "tabs"
+.content
+  = render partial: "tabs"
