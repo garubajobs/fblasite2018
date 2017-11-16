@@ -9,7 +9,7 @@ var outsideClickListener = function(event) {
   }
 }
 
-$(function () {
+$(document).on('turbolinks:load', function () {
   $(document).on('click', '#show-sidebar', function () {
     $('.obfuscator').show()
     $('.sidebar').animate({width: 240}, 200, function () {

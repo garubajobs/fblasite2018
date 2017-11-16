@@ -1,4 +1,4 @@
-$(function () {
+$(document).on('turbolinks:load', function () {
   $(document).on('click', 'a.tab', function (event) {
     event.preventDefault()
     $('.panel.is-active').toggleClass('is-active')

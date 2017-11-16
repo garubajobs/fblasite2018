@@ -5,13 +5,17 @@ html
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-    meta name="viewport" content="width=device-width,initial-scale=1"
+    meta name="viewport" content="width=device-width,height=device-height,initial-scale=1"
+
   body
     .obfuscator
     = render partial: "header"
     = render partial: "sidebar"
     main 
-      = yield
-      .spacer
-
-      = render partial: "footer"
+      table.main-table
+        tr
+          td
+            = yield
+        tr
+          td
+            = render partial: "footer"
