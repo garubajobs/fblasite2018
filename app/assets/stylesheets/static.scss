@@ -7,7 +7,8 @@
 
 
 #homepage-hero {
-  background-image: image-url("NewHero.jpg");
+  //background-image: image-url("NewHero.jpg");
+  background-image: image-url("ayush_hero2.jpg")
 }
 #openings-hero {
   background-image: image-url("JobOpeningsHero.png");
@@ -35,4 +36,19 @@
 
 .content img {
   float: right;
+}
+
+//resume page 
+//hide all the resume information by default
+#chrono-resume, #func-resume, #combo-resume, #targeted-resume {
+  //display: none;
+}
+
+//set the format of the sample resumes
+.sample-resume {
+  color: black;
+  font-family: "Times";
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
 }
