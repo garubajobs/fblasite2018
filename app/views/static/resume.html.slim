@@ -3,7 +3,6 @@
 .other-hero-image#resume-hero
   .hero-text R&eacute;sum&eacute;
 .content 
-  = render partial: "static/resumes/func"
   .text
     p Your resume is a very important part of your job application. Your resume is a telling of your job experience and history to potential employers. A well written one can easily earn you an interview and place you ahead of candidates while a poorly written resume can ruin your chances of even earning the job.
     p The first step on your resume writing adventure is to choose a resume format. Each type of resume comes with its own drawbacks and advantages. 
@@ -18,7 +17,7 @@
       p Chronological resumes can help you shine the brightest when you have a vast work history in the same line of work as you are applying to. This can help you start with one foot forward immediately showing your employer that you already have experience in the area of work.
       h4 Disadvantages
       p The chronological resume can fall short when you wish to change careers. Even if you have extensive work experience, the fact that it is unrelated will likely grant you a one way trip to the reject pile. Lastly, refrain from using a chronological resume if your work history contains various holes or if you have a history of frequently switching jobs.
-
+      h4 Example:
       = render partial: "static/resumes/chrono"
   .text.resume
     h3 Functional
@@ -29,7 +28,7 @@
       p A functional resume covers all of the drawbacks of a chronological resume. Its main purpose is to draw attention away from your work history and instead focus on your skills and expertise. Because of this, a functional resume is best suited for job seekers who are changing careers, have gaps in their work history or are new to the workforce.
       h4 Disadvantages
       p The functional and chronological resumes formats are opposites of each other: where one fails the other is successful. As a result, functional resumes are not suited for individuals who have a vast work history in the same line of work they are applying to, since a functional resume will only rob them of this advantage.
-      
+      h4 Example:
       = render partial: "static/resumes/func"
   .text.resume
     h3 Combination
@@ -40,11 +39,12 @@
       p A combination resume is perfect for those who want the best of both worlds. A combination resume allows you to emphasize your skills in the same way a functional resume does, but it also allows you to display your work history as well. Job seekers with skills, experience, and job history to back it up should consider a functional resume allowing them to present all of their assets at once.
       h4 Disadvantages
       p A combination resume format does not favor those who have weaknesses in their skills or work history.
+      h4 Example:
       = render partial: "static/resumes/func"
   .text.resume
     h3 Targeted
     #targeted-resume
       h4 Overview of Structure
       p A targeted resume is different from all the resume formats listed above. It is the resume format for you if the other three formats do not work for you. A targeted resume is as the name states: targeted. It is a resume that is adapted to the specific job you wish to apply for in order to highlight whatever you desire, whether it be skills, work history, or anything else. This resume can take time and effort since there is no specific format that you need to follow. As you make this custom resume, make sure to proofread carefully in order to avoid errors.
-      
+
 = render partial: "tabs"
