@@ -1,0 +1,17 @@
+.forum-content 
+  .card
+    .card-content
+      = form_for @post do |f|
+        h3 New Post
+        .row
+          p
+            = f.text_field :name, class: "form-field", placeholder: "Enter your name"
+            = f.label :name, "Enter your name"
+          p 
+            = f.text_field :email, class: "form-field", placeholder: "Enter your e-mail"
+            = f.label :email, "E-mail"
+        p 
+          = f.text_area :message, class: "form-field", placeholder: "Message", rows: 6, resizable: "false"
+          = f.label :message, "Message"
+
+
