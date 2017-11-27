@@ -26,29 +26,57 @@
 .content {
   width: 90%;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 
-.content .text {
+
+.content>.text {
   color: $grey-800;
 }
 
 .content img {
   float: right;
 }
+.text>div {
+  margin: 0 0;
+  width: 100%;
+}
 
 //resume page 
 //hide all the resume information by default
-#chrono-resume, #func-resume, #combo-resume, #targeted-resume {
-  //display: none;
-}
-
 //set the format of the sample resumes
 .sample-resume {
   color: black;
   font-family: "Times";
   font-size: 20px;
   background-color: white;
-  padding: 10px;
+  padding: 10px 30px;
+  width: calc(80vw - 60px);
+  height: 80vh;
+  margin: 0 auto;
+  box-shadow: 0px 0px 3px black;
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  right: 10vw;
+  bottom: 10vh;
+  overflow-y: scroll;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  @media screen and (max-width: 575px) {
+    width: calc(95vw - 60px);
+    left: 2.5vw;
+  }
+
+}
+.text.resume {
+  a {
+    text-decoration: none;
+  }
+  h3, h4{
+    font-weight: bold;
+  }
+  
 }

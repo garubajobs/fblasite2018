@@ -1,6 +1,8 @@
+@import "colors";
+
 header {
   height: 64px;
-  background-color: #2196F3;
+  background-color: $blue-500;
   color: white;
   margin: 0;
   padding: 0;

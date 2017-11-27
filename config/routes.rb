@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts, path: "/forum", only: [:index, :create]
+
   root 'static#index'
 
   get '/openings', to: "static#openings"

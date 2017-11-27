@@ -55,3 +55,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'slim'
 gem 'jquery-rails'
+
+source "https://rails-assets.org" do
+  gem 'rails-assets-jquery-viewport-checker'
+end

@@ -1,7 +1,22 @@
+//scroll down on main page
 var mainContentScroll = function () {
   $('main').animate({scrollTop: $('.tabs-container').offset().top - 63}, 1000)
 }
 
+var closeModal = function(link) {
+  $('.obfuscator').off('click').hide()
+  $(link).hide()
+}
 $(document).on('turbolinks:load', function () {
   $(document).on('click', '#down-arrow-button', mainContentScroll);
+
+  //
+  $(document).on('click', 'a.example-link', function(event) {
+    event.preventDefault();
+    $('.obfuscator').show();
+    $(this.hash).show();
+    $('.obfuscator').on('click', () => {
+      closeModal(this.hash)
+    })
+  })
 })
