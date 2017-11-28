@@ -2,7 +2,6 @@
 // All this logic will automatically be available in application.js.
 // You can use CoffeeScript in this file: http://coffeescript.org/
 var displayReplyForm = function() { //display form to reply to post when clicking on text
-    var formNumber = $(this).data("post")
     $(this).hide()
     .next('.reply-form').show()
     .find('input[name="reply[name]"]').focus() //fpcus on first text box
