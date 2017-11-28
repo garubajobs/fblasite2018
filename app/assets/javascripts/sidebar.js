@@ -1,4 +1,6 @@
-var outsideClickListenerSidebar = function(event) {
+// Behavior of sidebar (only on mobile site)
+
+var outsideClickListenerSidebar = function(event) { //closes sidebar when clicking on obfuscator
   if (!$(event.target).closest('.sidebar').length){
     if ($('.sidebar').width() > 0){
       $('.sidebar .nav-link').hide()

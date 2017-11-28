@@ -1,7 +1,41 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//styles for forum page
+@import "colors";
 .forum-content {
     width: 70%;
     margin: 0 auto;
+}
+
+.reply-form {
+    display: none;
+}
+
+.reply {
+    background-color: $grey-50;
+}
+
+.reply-form-holder {
+    background-color: $grey-300;
+}
+
+.reply-modal {
+    background: white;
+    position: fixed;
+    height: 80vh;
+    width: 80vw;
+    top: 10vh;
+    bottom: 10vh;
+    left: 10vw;
+    right: 10vw;
+    overflow-y: scroll;
+}
+
+.card-content {
+    border-bottom: 1px solid $grey-400 
+}
+
+.message-text {
+    font-size: 20px;
+}
+.post-name {
+    font-size: 14px;
 }

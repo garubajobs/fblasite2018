@@ -1,8 +1,8 @@
-//scroll down on main page
+//scroll down on main page arrow click
 var mainContentScroll = function () {
   $('main').animate({scrollTop: $('.tabs-container').offset().top - 63}, 1000)
 }
-
+//closes resume previews on resume page
 var closeModal = function(link) {
   $('.obfuscator').off('click').hide()
   $(link).hide()
@@ -10,7 +10,7 @@ var closeModal = function(link) {
 $(document).on('turbolinks:load', function () {
   $(document).on('click', '#down-arrow-button', mainContentScroll);
 
-  //
+  //opens resume example as a modal
   $(document).on('click', 'a.example-link', function(event) {
     event.preventDefault();
     $('.obfuscator').show();

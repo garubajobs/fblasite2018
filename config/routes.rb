@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :posts, path: "/forum", only: [:index, :create]
+  resources :replies, only: [:create]
 
   root 'static#index'
 

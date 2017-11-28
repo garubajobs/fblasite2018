@@ -16,7 +16,9 @@ html
       table.main-table
         tr
           td
-            = yield
+            div style="min-height: 100vh"
+              = yield
         tr
-          td
+          td style="height: 96px"
+          
             = render partial: "footer"

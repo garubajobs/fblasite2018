@@ -1,3 +1,5 @@
+//parallax scrolling effect on hero images
+
 var heroParallax = function(elem, speed = 0.33) {
     s = $('main').scrollTop()
     $(elem).css('background-position-y', `calc(50% + ${ s * speed}px)`)
