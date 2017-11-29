@@ -20,7 +20,7 @@ var hideModalPost = function() {
 }
 
 //check email in form
-function ValidateEmail(text)   
+function validateEmail(text)   
 {  
  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(text))  
   {  
@@ -32,7 +32,16 @@ function ValidateEmail(text)
 $(document).on('turbolinks:load', function() {
     $(document).on ('click', '.reply-placeholder', displayReplyForm)
     $(document).on ('click', '.card .post-content, .card .reply', showModalPost)
-    $(document).on ('change', 'input[name*="name"]', function() {
-        
+    $(document).on ('change', 'input[name*="email"]', function() {
+        if (!validateEmail($(this).val())) {
+            $(this).addClass('incorrect-input')
+            .next('label').addClass('incorrect-input')
+            $(this).parents("form").find("input[type='submit']").hide()
+        }
+        else {
+            $(this).removeClass('incorrect-input')
+            .next('label').removeClass('incorrect-input')
+            $(this).parents("form").find("input[type=submit]").show()
+        }
     })
 })

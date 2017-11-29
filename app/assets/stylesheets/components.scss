@@ -126,6 +126,13 @@ label, .form-field ~ label {
   color: $grey-500;
 }
 
+label.incorrect-input {
+  color: $red-500;
+}
+input.incorrect-input {
+  border-bottom-color: $red-500;
+}
+
 .form-field:focus ~ label {
   color: $blue-600;
 }
