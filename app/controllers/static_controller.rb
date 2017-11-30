@@ -17,4 +17,7 @@ class StaticController < ApplicationController
 
   def credits
   end
+
+  def terms
+  end
 end

@@ -14,5 +14,7 @@ Rails.application.routes.draw do
 
   get '/credits', to: 'static#credits'
 
+  get '/termsandconditions', to: 'static#terms'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
