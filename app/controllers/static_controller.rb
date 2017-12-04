@@ -20,4 +20,7 @@ class StaticController < ApplicationController
 
   def terms
   end
+
+  def privacypolicy
+  end
 end
