@@ -22,7 +22,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  line-height: 1.5;
+  
 }
 main {
   position: absolute;
@@ -40,6 +40,7 @@ main {
   background-repeat: repeat repeat;
   background-attachment: local;
   min-height: calc(100% - 64px - 106px);
+  line-height: 1.5;
 }
 //chrome fontfix
 body {
