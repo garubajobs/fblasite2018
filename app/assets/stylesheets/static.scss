@@ -23,22 +23,30 @@
 
 .content {
   width: 60%;
-  margin: 0 auto;
+  margin: 20px auto;
   font-size: 16px;
 }
 
 
 
-.content>.text {
+.text {
   color: $grey-800;
 }
 
 img.right {
   float: right;
+  & + .text {
+    float : left;
+  }
 }
 img.left {
   float: left;
+  & + .text {
+    float : right;
+  }
 }
+
+
 .content img {
   width: 300px;
   height: auto;
@@ -47,6 +55,7 @@ img.left {
   max-width: 100%;
   padding: 30px;
 }
+
 .text>div {
   margin: 0 0;
   width: 100%;
