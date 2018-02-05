@@ -21,9 +21,9 @@ $(document).on('turbolinks:load', function () {
   })
 
   // make content divs appear on scroll
-  $('.content>div:not(:first-child)').addClass("invisible")
+  $('.section').addClass("invisible")
   $('main').on('scroll', function() {
-    $('.text>div:not(:first-child)').viewportChecker({
+    $('.section').viewportChecker({
       classToAdd: 'animated fadeInUp',
       repeat: false,
       classToRemove: 'invisible',

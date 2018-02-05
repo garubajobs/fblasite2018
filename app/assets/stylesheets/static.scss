@@ -35,15 +35,10 @@
 
 img.right {
   float: right;
-  & + .text {
-    float : left;
-  }
+  
 }
 img.left {
   float: left;
-  & + .text {
-    float : right;
-  }
 }
 
 
