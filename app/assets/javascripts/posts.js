@@ -19,6 +19,17 @@ var hideModalPost = function() {
     $('.modal').hide()
 }
 
+function showCreateForm() {
+    $('.input-form').show()
+    $('.obfuscator').show().on('click', hideCreateForm)
+ 
+}
+
+function hideCreateForm() {
+    $('.obfuscator').off().hide()
+    $('.input-form').off().hide()
+}
+
 //check email in form
 function validateEmail(text)   
 {  
@@ -32,6 +43,7 @@ function validateEmail(text)
 $(document).on('turbolinks:load', function() {
     $(document).on ('click', '.reply-placeholder', displayReplyForm)
     $(document).on ('click', '.card .post-content, .card .reply', showModalPost)
+    $('.new-post-button').on('click', showCreateForm)
     $(document).on ('change', 'input[name*="email"]', function() {
         if (!validateEmail($(this).val())) {
             $(this).addClass('incorrect-input')

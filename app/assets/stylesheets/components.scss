@@ -17,6 +17,13 @@
 }
 
 //round fab
+.fab {
+  position: fixed;
+  z-index: 3;
+  right: 3vw;
+  bottom: 5vh;
+}
+
 .round-button {
   @include button-style;
   border-radius: 50%;
@@ -29,11 +36,17 @@
   overflow: hidden;
   background-color: $green-A200;
 
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+
   display: table;
   i {
     line-height: 26px;
     display: table-cell;
     vertical-align: middle;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.14),0 5px 2px -3px rgba(0,0,0,.2),0 4px 7px 0 rgba(0,0,0,.12);
   }
 }
 
@@ -65,7 +78,7 @@
 .obfuscator {
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 1000;
   background: black;
   opacity: .6;
   position: fixed;
@@ -78,7 +91,7 @@
 
 .modal { 
   display: none;
-  z-index: 11;
+  z-index: 2000;
 }
 
 .row {
