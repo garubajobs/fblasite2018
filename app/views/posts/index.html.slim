@@ -16,7 +16,7 @@
         p 
           = f.text_area :message, class: "form-field", placeholder: "Message", rows: 6, resizable: "false"
           = f.label :message, "Message"
-        = f.submit class: 'rect-button'
+        = f.submit class: 'rect-button', disabled: true
   - @posts.each do |post|
     .card.post 
       .card-content.post-content 
