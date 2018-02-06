@@ -34,6 +34,21 @@
     overflow-y: scroll;
 }
 
+.input-form {
+    background: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    max-width: 95%;
+    padding: 30px;
+
+}
+
 .card-content {
     border-bottom: 1px solid $grey-400 
 }
