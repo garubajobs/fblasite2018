@@ -25,10 +25,9 @@
 .reply-modal {
     background: white;
     position: fixed;
-    height: 80vh;
+    max-height: 80vh;
     width: 80vw;
     top: 10vh;
-    bottom: 10vh;
     left: 10vw;
     right: 10vw;
     overflow-y: scroll;
