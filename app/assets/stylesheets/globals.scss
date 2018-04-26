@@ -1,6 +1,10 @@
 // Styles for heading elements 
 @import "colors";
 
+h1 {
+  font-size: 50px;
+  color: $grey-700;
+}
 h2 {
   font-size: 45px;
 }
