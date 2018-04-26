@@ -27,9 +27,12 @@
     div.section
       h3 Tips
       p Watch the videos below for some tips on succeeding in your interview.
-      <iframe class="yt-video" width="854" height="480" src="https://www.youtube.com/embed/DHDrj0_bMQ0" frameborder="0" gesture="media" allowfullscreen></iframe>
-      br
-      <iframe  width="854" height="480" src="https://www.youtube.com/embed/7POo55A8bCQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      br
-      <iframe  width="854" height="480" src="https://www.youtube.com/embed/yEuAS2r5Vpc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      .video-wrapper
+        <iframe class="yt-video" width="854" height="480" src="https://www.youtube.com/embed/DHDrj0_bMQ0" frameborder="0" gesture="media" allowfullscreen></iframe>
+      /br
+      .video-wrapper
+        <iframe  width="854" height="480" src="https://www.youtube.com/embed/7POo55A8bCQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      /br
+      .video-wrapper
+        <iframe  width="854" height="480" src="https://www.youtube.com/embed/yEuAS2r5Vpc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 = render partial: "tabs"
