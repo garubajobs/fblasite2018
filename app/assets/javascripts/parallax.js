@@ -5,7 +5,7 @@ var heroParallax = function(elem, speed = 0.33) {
     $(elem).css('background-position-y', `calc(50% + ${ s * speed}px)`)
 }
 
-$(document).on('turbolinks:load', function(){
+$(function(){
     
 /*     var bgPos = $('#homepage-hero').css('background-position').split()
     var yPos = bgPos[1];

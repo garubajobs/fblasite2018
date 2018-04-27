@@ -11,7 +11,7 @@ var outsideClickListenerSidebar = function(event) { //closes sidebar when clicki
   }
 }
 
-$(document).on('turbolinks:load', function () {
+$(function () {
   $(document).on('click', '#show-sidebar', function () {
     $('.obfuscator').show()
     $('.sidebar').animate({width: 240}, 200, function () {

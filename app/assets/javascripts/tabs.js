@@ -1,6 +1,6 @@
 // Behavior of tabs on main page and content pages
 
-$(document).on('turbolinks:load', function () {
+$(function () {
   $(document).on('click', 'a.tab', function (event) {
     event.preventDefault()
     $('.panel.is-active').toggleClass('is-active')

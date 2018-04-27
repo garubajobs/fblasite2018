@@ -7,9 +7,18 @@ var closeModal = function(link) {
   $('.obfuscator').off('click').hide()
   $(link).hide()
 }
-$(document).on('turbolinks:load', function () {
-  $(document).on('click', '#down-arrow-button', mainContentScroll);
 
+function showVisibleSections(){
+  $('.section').viewportChecker({
+    classToAdd: 'animated fadeInUp',
+    repeat: false,
+    classToRemove: 'invisible',
+    removeClassAfterAnimation: true
+  })
+}
+
+$(function () {
+  $(document).on('click', '#down-arrow-button', mainContentScroll);
   //opens resume example as a modal
   $(document).on('click', 'a.example-link', function(event) {
     event.preventDefault();
@@ -19,15 +28,9 @@ $(document).on('turbolinks:load', function () {
       closeModal(this.hash)
     })
   })
-
+  
   // make content divs appear on scroll
   $('.section').addClass("invisible")
-  $('main').on('scroll', function() {
-    $('.section').viewportChecker({
-      classToAdd: 'animated fadeInUp',
-      repeat: false,
-      classToRemove: 'invisible',
-      removeClassAfterAnimation: true
-    })
-  })
+  $('main').on('scroll', showVisibleSections)
+  showVisibleSections()
 })
