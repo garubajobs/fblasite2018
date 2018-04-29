@@ -58,19 +58,28 @@
 .panel-image {
   float: left;
   height: 25vh;
-  margin: 2vw;
-  max-width: 100%;
+  width: 50%;
+  max-width: 90vw;
+  img {
+    max-height: 90%;
+    margin: 5% auto;
+    max-width: 100%;
+  }
 
   @media screen and (max-width: 992px){
     width: 90%;
-    height: auto;
+    height: 40vh;
   }
 }
 
 .panel-text {
   text-align: left;
   overflow: hidden;
-  min-width: 40%;
+  width: 50%;
+  @media screen and (max-width: 992px) {
+    width: 90%;
+    height: auto;
+  }
 }
 @keyframes active-tab {
   from   {border-bottom-color: rgba($blue-500, 0);}

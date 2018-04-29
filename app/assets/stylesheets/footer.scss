@@ -2,12 +2,12 @@
 // @author: Ayush Nene
 @import "colors";
 footer {
-  background-color: $grey-800;
+  background-color: $grey-700;
   height: 32px;
   display: table;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   .footer-row {
     padding: 0px 40px;
     line-height: 32px;
@@ -22,12 +22,12 @@ footer {
       font-family: "Righteous", cursive;
       vertical-align: middle;
       text-decoration: none;
-      color: $grey-500;
+      color: $grey-100;
       letter-spacing: .02em;
     }
     i {
       font-size: 32px;
-      color: $grey-500;
+      color: $grey-50;
       margin: 5px;
     }
     .footer-text {

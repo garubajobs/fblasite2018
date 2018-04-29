@@ -1,5 +1,9 @@
 //styles for forum page
 @import "colors";
+#forum-hero {
+    background-image: image-url("ForumHero.jpg");
+}
+
 .forum-content {
     width: 70%;
     margin: 0 auto;
@@ -53,7 +57,7 @@
 }
 
 .message-text {
-    font-size: 20px;
+    font-size: 16px;
 }
 .post-name {
     font-size: 14px;
