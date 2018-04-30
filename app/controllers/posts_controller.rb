@@ -3,7 +3,6 @@ class PostsController < ApplicationController
 
   # GET /posts
   # GET /posts.json
-  @@posts_enabled = false
   def index
     @posts = Post.order("created_at desc")
     @post = Post.new
