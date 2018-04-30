@@ -18,7 +18,7 @@
       p 
         = f.text_area :message, class: "form-field", placeholder: "Message", rows: 3, resizable: "false"
         = f.label :message, "Message"
-      = f.submit class: 'rect-button', disabled: @posts_enabled
+      = f.submit class: 'rect-button', disabled: @@posts_enabled
 .forum-content 
 
   - @posts.each do |post|
