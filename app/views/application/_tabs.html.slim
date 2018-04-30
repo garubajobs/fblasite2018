@@ -18,7 +18,7 @@
           = image_tag "#{link}-tab.png", class: "tab-image"
     .panel#openings-panel class=(( @tab_num == 0 ) ? "is-active" : "")
       .panel-image
-        = image_tag "jobMagnify4.png"
+        = image_tag "openings-panel2.png"
       .panel-text
         h4 Job Openings
         p Finding job openings can be a daunting task, and finding the right job for yourself can be even harder. Follow these simple steps to find the job openings right for you.
@@ -45,9 +45,12 @@
         h4 The Interview
         p This aspect of the job application process either makes or breaks employees. Learn how to make your interview build you up.
         a href="interview": .rect-button Prepare For Your Interview
-    .panel class=(( @tab_num == 4) ? "is-active" : "")
+    .panel#forum-panel class=(( @tab_num == 4) ? "is-active" : "")
+      .panel-image
+        = image_tag "Forum.png"
       .panel-text
         h4 Forum
         p Your journey is now complete, but if you still have any lingering questions, continue to the forum for further clarification.
         a href="forum": .rect-button Find Answers
+    
   
