@@ -1,12 +1,10 @@
-
-
 {
-    "master_picture": "app/assets/images/Favicon.png",
+    "master_picture": "app/assets/images/Logo.png",
     "favicon_design": {
         "ios": {
             "picture_aspect": "background_and_margin",
-            "background_color": "#000000",
-            "margin": "21%",
+            "background_color": "#aaaaaa",
+            "margin": "18%",
             "assets": {
                 "ios6_and_prior_icons": false,
                 "ios7_and_later_icons": false,
@@ -19,7 +17,7 @@
         ],
         "windows": {
             "picture_aspect": "no_change",
-            "background_color": "#00aba9",
+            "background_color": "#2d89ef",
             "on_conflict": "override",
             "assets": {
                 "windows_80_ie_10_tile": false,
@@ -33,7 +31,7 @@
         },
         "android_chrome": {
             "picture_aspect": "shadow",
-            "theme_color": "#ffffff",
+            "theme_color": "#69f0ae",
             "manifest": {
                 "name": "Garuba",
                 "display": "standalone",
@@ -48,8 +46,8 @@
         },
         "safari_pinned_tab": {
             "picture_aspect": "black_and_white",
-            "threshold": 90,
-            "theme_color": "#69f0ae"
+            "threshold": 50,
+            "theme_color": "#5bbad5"
         }
     },
     "settings": {
@@ -60,4 +58,3 @@
         "use_path_as_is": false
     }
 }
-
